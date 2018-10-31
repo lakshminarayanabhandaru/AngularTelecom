@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+      <table class="table">
+          <thead>
+            <tr>
+              <th>Plan Name</th>
+              <th>Price</th>
+              <th>Validity</th>
+              <th>Voice</th>
+              <th>Data</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let plan of planList">
+              <td>{{plan.planName}}</td>
+              <td>{{plan.planAmount | currency:'INR' }}</td>
+              <td>{{plan.planValidity}}</td>
+              <td>{{plan.voice}}</td>
+              <td>{{plan.data}}</td>
+            </tr>
+          </tbody>
+        </table>
+  </div>
+</div>
